@@ -1,0 +1,23 @@
+h1{
+
+}
+
+header{
+    width:100%;
+    background-color: goldenrod;
+    text-align: center;
+}
+
+footer {
+    width:100%;
+    background-color: darkgoldenrod;
+}
+
+main{
+    width:80%;
+    margin:auto;
+}
+
+body{
+    margin: 0;
+}
