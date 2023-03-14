@@ -1,23 +1,95 @@
-h1{
-
+@font-face
+{
+    font-family: "Futura_XBold";
+    src: url("fonts/Futura Extra Black font.ttf") format("truetype");
 }
 
-header{
-    width:100%;
-    background-color: goldenrod;
-    text-align: center;
-}
-
-footer {
-    width:100%;
-    background-color: darkgoldenrod;
-}
-
-main{
-    width:80%;
-    margin:auto;
+@font-face
+{
+    font-family: "Futura_Book";
+    src: url("fonts/Futura Book font.ttf") format("truetype");
 }
 
 body{
     margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    animation-name: title-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    font-size: 72px;
+    transform: translateY(-150%);
+    font-family: "Futura_XBold", serif;
+    color: #4c4c4c;
+}
+
+h3{
+    animation-name: title-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    font-size: 24px;
+    transform: translateY(-150%);
+    font-family: "Futura_Book", serif;
+    color: #4c4c4c;
+}
+
+header{
+    width:200%;
+    background-color: #ecd81a;
+    text-align: center;
+    display: flex;
+    margin:0 -50%;
+    position: sticky;
+    top: 0;
+}
+
+@keyframes border-anim {
+    from{
+        margin:0 12%;
+    }
+
+    to{
+        margin: 0;
+    }
+}
+
+@keyframes title-anim {
+    from{
+        transform: translateY(-150%);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+main{
+    width:70%;
+    margin:auto;
+}
+
+a{
+    text-decoration: none;
+    margin:0 5%;
+}
+
+header > div:first-child, header > div:last-child{
+    animation-name: border-anim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    margin:0 12%;
+    width:100%;
+    background-color: #ede71a;
+    transform: skew(20deg);
+}
+
+footer {
+    width:100%;
+    background-color: #edcd1b;
 }
