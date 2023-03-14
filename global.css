@@ -10,61 +10,52 @@
     src: url("fonts/Futura Book font.ttf") format("truetype");
 }
 
-body{
+body, html{
     margin: 0;
     overflow-x: hidden;
+    width: 100%;
+    background-color: #cbac12;
 }
 
 h1{
     animation-name: title-anim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 
+    margin:0;
     font-size: 72px;
-    transform: translateY(-150%);
     font-family: "Futura_XBold", serif;
     color: #4c4c4c;
 }
 
 h3{
-    animation-name: title-anim;
+    animation-name: name-anim;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 
-    font-size: 24px;
-    transform: translateY(-150%);
+    margin:0;
+    font-size: 20px;
     font-family: "Futura_Book", serif;
     color: #4c4c4c;
 }
 
 header{
-    width:200%;
     background-color: #ecd81a;
     text-align: center;
     display: flex;
-    margin:0 -50%;
+    margin:0 -10%;
     position: sticky;
     top: 0;
 }
 
-@keyframes border-anim {
-    from{
-        margin:0 12%;
-    }
-
-    to{
-        margin: 0;
-    }
-}
-
-@keyframes title-anim {
-    from{
-        transform: translateY(-150%);
-    }
-
-    to{
-        transform: translateY(0);
-    }
+hr{
+    height:5px;
+    width: 400px;
+    border-width:0;
+    background-color: #efefee;
+    border-radius:100px;
+    margin:auto;
 }
 
 main{
@@ -77,19 +68,56 @@ a{
     margin:0 5%;
 }
 
+header > div {
+    width:100%;
+ }
+
 header > div:first-child, header > div:last-child{
     animation-name: border-anim;
     animation-duration: 2s;
     animation-delay: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 
-    margin:0 12%;
-    width:100%;
     background-color: #ede71a;
     transform: skew(20deg);
 }
 
 footer {
-    width:100%;
-    background-color: #edcd1b;
+    background-color: #806e0a;
+}
+
+/*----- ANIMATIONS -----*/
+
+@keyframes name-anim {
+    from{
+        opacity:0;
+        letter-spacing: 20px;
+    }
+
+    to{
+        opacity:1;
+        letter-spacing: 14px;
+    }
+}
+
+@keyframes border-anim {
+    from{
+        opacity:0;
+        margin:0 10%;
+    }
+
+    to{
+        opacity:1;
+        margin:0 2%;
+    }
+}
+
+@keyframes title-anim {
+    from{
+        transform: translateY(-200%);
+    }
+
+    to{
+        transform: translateY(0);
+    }
 }
