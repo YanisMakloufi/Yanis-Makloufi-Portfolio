@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+body{
+    text-align: center;
+}
+
+article{
+    transition:0.5s;
+
+    width:450px;
+    margin:50px 0;
+    background-color: #ebd14d;
+    padding: 1%;
+    transform: skew(-3deg);
+    max-width: 40%;
+}
+
+article > * {
+    transform: skew(3deg);
+}
+
+img{
+    display: block;
+    margin:auto;
+    width:60%;
+}
+
+hr{
+    width:80%;
+}
+
+article:hover{
+    box-shadow: 12px 16px #7f6e0a;
+    transform: scale(1.1) skew(-3deg);
+    /*border: 5px solid #eeeeed;*/
+    /*box-shadow: 0px 0px 5px #eeeeed inset teal;*/
+    outline:5px solid #eeeeed;
+    border-collapse: collapse;
+    z-index: 1;
+}
