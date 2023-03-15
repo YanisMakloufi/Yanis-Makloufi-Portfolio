@@ -1,19 +1,19 @@
 @font-face
 {
     font-family: "Futura_XBold";
-    src: url("fonts/Futura Extra Black font.ttf") format("truetype");
+    src: url("../fonts/Futura Extra Black font.ttf") format("truetype");
 }
 
 @font-face
 {
     font-family: "Futura_Book";
-    src: url("fonts/Futura Book font.ttf") format("truetype");
+    src: url("../fonts/Futura Book font.ttf") format("truetype");
 }
 
 @font-face
 {
     font-family: "Futura_Bold";
-    src: url("fonts/Futura Bold font.ttf") format("truetype");
+    src: url("../fonts/Futura Bold font.ttf") format("truetype");
 }
 
 body, html{
@@ -34,22 +34,31 @@ h1{
     font-family: "Futura_XBold", serif;
 }
 
-h2{
+h3{
+    font-family: "Futura_Book", serif;
+    font-size: 24px;
+}
+
+header h3{
     animation-name: name-anim;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
 
-    font-size: 24px;
     margin:0;
-    font-family: "Futura_Book", serif;
     color: #4c4c4c;
 }
 
-h3{
+h4{
     font-family: "Futura_Bold", serif;
     font-size: 46px;
     margin:5%;
+}
+
+body > div{
+    background-color: #ead04d;
+    padding: 10px;
+    text-align: center;
 }
 
 header{
@@ -57,49 +66,11 @@ header{
     text-align: center;
     display: flex;
     margin:0 -10%;
-    margin-bottom:5%;
+    margin-bottom:3%;
     position: sticky;
     height: 200px;
     top: 0;
     z-index: 1;
-}
-
-article{
-     background-color: #ecd24d;
-     transform: rotateZ(2deg) skew(2deg);
-     margin:10% 0;
- }
-
-section{
-    width: 75%;
-    margin:auto;
-    height: 450px;
-    display: flex;
-    align-items: center;
-}
-
-section > div {
-    width:250%;
-    text-align: center;
-    margin-right:10%;
-    background-color: #f8e37a;
-    height: 100%;
-}
-
-p{
-    vertical-align: middle;
-    padding: 1%;
-    border: solid #eeeeed;
-    border-width: 0 0 5px 5px;
-    border-radius: 5px;
-    height: fit-content;
-}
-
-section img {
-    display: block;
-    border: 5px solid #4b4406;
-    width:80%;
-    margin: auto;
 }
 
 hr{
@@ -109,10 +80,6 @@ hr{
     background-color: #efefee;
     border-radius:100px;
     margin:15px auto;
-}
-
-main{
-    margin:auto;
 }
 
 a{

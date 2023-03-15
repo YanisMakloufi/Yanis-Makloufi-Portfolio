@@ -1,0 +1,43 @@
+article{
+     background-color: #ecd24d;
+     transform: rotateZ(2deg) skew(2deg);
+     margin:15% 0;
+ }
+
+section{
+    width: 75%;
+    margin:auto;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+section > div {
+    width:250%;
+    min-width:250px;
+    text-align: center;
+    margin-right:10%;
+    background-color: #f8e37a;
+    height: 100%;
+}
+
+p{
+    vertical-align: middle;
+    padding: 1%;
+    border: solid #eeeeed;
+    border-width: 0 0 5px 5px;
+    border-radius: 5px 5px 5px 20px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+section img {
+    display: block;
+    border: 5px solid #4b4406;
+    width:70%;
+    margin: auto;
+}
+
+main{
+    margin:auto;
+}
