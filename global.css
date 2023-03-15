@@ -10,11 +10,21 @@
     src: url("fonts/Futura Book font.ttf") format("truetype");
 }
 
+@font-face
+{
+    font-family: "Futura_Bold";
+    src: url("fonts/Futura Bold font.ttf") format("truetype");
+}
+
 body, html{
     margin: 0;
-    overflow-x: hidden;
-    width: 100%;
     background-color: #cbac12;
+    font-size: 22px;
+    color: #4c4c4c;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 h1{
@@ -23,21 +33,39 @@ h1{
     animation-fill-mode: both;
 
     margin:0;
-    font-size: 72px;
+    font-size: 78px;
     font-family: "Futura_XBold", serif;
-    color: #4c4c4c;
 }
 
-h3{
+h2{
     animation-name: name-anim;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
 
+    font-size: 24px;
     margin:0;
-    font-size: 20px;
     font-family: "Futura_Book", serif;
     color: #4c4c4c;
+}
+
+h3{
+    font-family: "Futura_Bold", serif;
+    font-size: 46px;
+    margin:5%;
+}
+
+article{
+    background-color: #ecd24d;
+    transform: rotateZ(2deg) skew(2deg);
+    margin:10% 0;
+}
+
+section{
+    width: 70%;
+    margin:auto;
+    padding: 3% 0;
+    display: flex;
 }
 
 header{
@@ -45,8 +73,31 @@ header{
     text-align: center;
     display: flex;
     margin:0 -10%;
+    margin-bottom:5%;
     position: sticky;
     top: 0;
+    z-index: 1;
+}
+
+section > div {
+    width:250%;
+    text-align: center;
+    margin-right:10%;
+}
+
+p{
+    vertical-align: middle;
+    padding: 1%;
+    border: solid #eeeeed;
+    border-width: 0 0 5px 5px;
+    border-radius: 5px;
+}
+
+section img {
+    display: block;
+    border: 5px solid #4b4406;
+    width:80%;
+    margin: auto;
 }
 
 hr{
@@ -55,11 +106,10 @@ hr{
     border-width:0;
     background-color: #efefee;
     border-radius:100px;
-    margin:auto;
+    margin:15px auto;
 }
 
 main{
-    width:70%;
     margin:auto;
 }
 
@@ -84,6 +134,7 @@ header > div:first-child, header > div:last-child{
 
 footer {
     background-color: #806e0a;
+    margin-top:5%;
 }
 
 /*----- ANIMATIONS -----*/
@@ -91,19 +142,19 @@ footer {
 @keyframes name-anim {
     from{
         opacity:0;
-        letter-spacing: 20px;
+        letter-spacing: 18px;
     }
 
     to{
         opacity:1;
-        letter-spacing: 14px;
+        letter-spacing: 12px;
     }
 }
 
 @keyframes border-anim {
     from{
         opacity:0;
-        margin:0 10%;
+        margin:0 15%;
     }
 
     to{
