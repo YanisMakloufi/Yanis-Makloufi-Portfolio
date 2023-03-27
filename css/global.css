@@ -71,10 +71,7 @@ header{
     display: flex;
     margin:0 -10%;
     margin-bottom:3%;
-    position: sticky;
-    height: 200px;
-    top: 0;
-    z-index: 2;
+    height: 600px;
 }
 
 hr{
@@ -95,7 +92,7 @@ header > div {
     width:100%;
  }
 
-header > div:first-child, header > div:last-child{
+header > div:last-child{
     animation-name: border-anim;
     animation-duration: 2s;
     animation-delay: 1s;
@@ -113,7 +110,7 @@ footer {
 
 /*----- ANIMATIONS -----*/
 
-@keyframes header-anim {
+/*@keyframes header-anim {
     from{
         transform: translateY(-200%);
     }
@@ -155,4 +152,4 @@ footer {
     to{
         transform: translateY(0);
     }
-}
+}*/
