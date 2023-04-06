@@ -1,3 +1,5 @@
+/*----- V FONTS V -----*/
+
 @font-face
 {
     font-family: "Nunito-Black";
@@ -16,10 +18,20 @@
     src: url("../fonts/Nunito-Bold.ttf") format("truetype");
 }
 
-body, html{
+@font-face
+{
+    font-family: "Nunito-Light";
+    src: url("../fonts/Nunito-Light.ttf") format("truetype");
+}
+
+/*----- V GLOBAL V -----*/
+
+body {
     margin: 0;
     background-color: #dde5ee;
+
     font-size: 22px;
+    font-family: "Nunito-Regular", serif;
     color: #202123;
 }
 
@@ -35,7 +47,7 @@ h1{
 
 h3{
     font-family: "Nunito-Regular", serif;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 header h3{
@@ -59,32 +71,30 @@ body > div{
 }
 
 header{
-    align-items: center;
     background-color: #3465a3;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-bottom:3%;
     justify-content: center;
+    align-items: center;
     height: 850px;
+    min-height: 90vh;
+    margin-bottom:3%;
     background-image: url("../images/6066657_blur.png");
-    background-size: 105%;
+    background-size: auto 110%;
     color: #dde5ee;
 }
 
 header > div {
-    border-style: solid;
-    border-width: 6px;
+    border: solid 6px #dde5ee;
     padding: 10px 30px;
     border-radius: 1000px;
-    border-color: #dde5ee;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 hr{
     height:5px;
     width: 60%;
-    border-width:0;
     background-color: #3465a3;
     border-radius:100px;
     margin:15px auto;
@@ -101,7 +111,7 @@ footer {
     padding: 2%;
 }
 
-/*----- ANIMATIONS -----*/
+/*----- V ANIMATIONS V -----*/
 
 /*@keyframes header-anim {
     from{

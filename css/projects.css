@@ -11,7 +11,7 @@ body{
 }
 
 article{
-    transition:0.2s;
+    transition:0.3s;
 
     width:450px;
     margin:50px 0;
@@ -23,6 +23,7 @@ article{
 }
 
 img{
+    transition:0.3s;
     display: block;
     margin:auto;
     width:60%;
@@ -44,6 +45,5 @@ article:hover{
 article:hover img{
     box-shadow: 17px 33px 33px rgba(53, 28, 117, 0.3);
     transform: scale(1.1);
-    transition: 0.5s;
     z-index: 1;
 }

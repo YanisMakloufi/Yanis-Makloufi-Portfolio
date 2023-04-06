@@ -130,7 +130,7 @@
         let position = xy.concat([ex1Layer]);
 
         let box = ex2Layer.getBoundingClientRect();
-        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*10;
+        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*20;
 
         ex2Layer.style = "background-position: " + (calcY+50) + "% center";
         transformElement(ex1Layer, position);
