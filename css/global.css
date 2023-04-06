@@ -1,27 +1,26 @@
 @font-face
 {
-    font-family: "Futura_XBold";
-    src: url("../fonts/Futura Extra Black font.ttf") format("truetype");
+    font-family: "Nunito-Black";
+    src: url("../fonts/Nunito-Black.ttf") format("truetype");
 }
 
 @font-face
 {
-    font-family: "Futura_Book";
-    src: url("../fonts/Futura Book font.ttf") format("truetype");
+    font-family: "Nunito-Regular";
+    src: url("../fonts/Nunito-Regular.ttf") format("truetype");
 }
 
 @font-face
 {
-    font-family: "Futura_Bold";
-    src: url("../fonts/Futura Bold font.ttf") format("truetype");
+    font-family: "Nunito-Bold";
+    src: url("../fonts/Nunito-Bold.ttf") format("truetype");
 }
 
 body, html{
     margin: 0;
-    background-color: #cbac12;
+    background-color: #dde5ee;
     font-size: 22px;
-    color: #4c4c4c;
-    overflow-x: clip;
+    color: #202123;
 }
 
 h1{
@@ -31,11 +30,11 @@ h1{
 
     margin:0;
     font-size: 78px;
-    font-family: "Futura_XBold", serif;
+    font-family: "Nunito-Black", serif;
 }
 
 h3{
-    font-family: "Futura_Book", serif;
+    font-family: "Nunito-Regular", serif;
     font-size: 24px;
 }
 
@@ -46,39 +45,47 @@ header h3{
     animation-fill-mode: both;
 
     margin:0;
-    color: #4c4c4c;
 }
 
 h4{
-    font-family: "Futura_Bold", serif;
+    font-family: "Nunito-Bold", serif;
     font-size: 46px;
     margin:5%;
 }
 
 body > div{
-    background-color: #ead04d;
+    background-color: #3465a3;
     padding: 10px;
-    text-align: center;
 }
 
 header{
-    animation-name: header-anim;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-
-    background-color: #ecd81a;
+    align-items: center;
+    background-color: #3465a3;
     text-align: center;
     display: flex;
-    margin:0 -10%;
+    flex-direction: column;
     margin-bottom:3%;
-    height: 600px;
+    justify-content: center;
+    height: 850px;
+    background-image: url("../images/6066657_blur.png");
+    background-size: 105%;
+    color: #dde5ee;
+}
+
+header > div {
+    border-style: solid;
+    border-width: 6px;
+    padding: 10px 30px;
+    border-radius: 1000px;
+    border-color: #dde5ee;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 hr{
     height:5px;
-    width: 400px;
+    width: 60%;
     border-width:0;
-    background-color: #efefee;
+    background-color: #3465a3;
     border-radius:100px;
     margin:15px auto;
 }
@@ -88,22 +95,8 @@ a{
     margin:0 5%;
 }
 
-header > div {
-    width:100%;
- }
-
-header > div:last-child{
-    animation-name: border-anim;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-
-    background-color: #ede71a;
-    transform: skew(20deg);
-}
-
 footer {
-    background-color: #806e0a;
+    background-color: #355269;
     margin-top:5%;
     padding: 2%;
 }

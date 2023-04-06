@@ -7,34 +7,39 @@
     <title>Title</title>
 </head>
 <body>
-    <header>
-        <div>
-            WORK IN PROGRESS
-        </div>
-        <div>
+    <header class="parallax">
+        <div class="rotator">
             <h1>PORTFOLIO</h1>
             <h3>YANIS MAKLOUFI</h3>
-            <hr>
-            <nav>
-                <a href="index.html">Présentation</a>
-                <a href="projects.html">Projets</a>
-            </nav>
         </div>
-        <div>
-
-        </div>
+        <nav>
+            <a href="index.html">Présentation</a>
+            <a href="projects.html">Projets</a>
+        </nav>
     </header>
-
 
     <div>
         <h2>PROJETS</h2>
         <h3>Voici une liste non exaustive des projets que j'ai réalisé tout au long de ma carrière</h3>
     </div>
     <main>
+        <article class="rotator">
+            <section>
+                <div>
+                    <h4>Sonic Illusion</h4>
+                    <img src="images/SonicIllusion_logo.png">
+                </div>
+                <hr>
+                <p>
+                    Mini texte qui explique le projet en quelques mots/phrases tout en restant consis et je rajoute du texte
+                </p>
+            </section>
+        </article>
+
         <article>
             <section>
                 <div>
-                    <h4>Projet 1</h4>
+                    <h4>Temporal Rift</h4>
                     <img src="images/photo.png">
                 </div>
                 <hr>
@@ -47,7 +52,20 @@
         <article>
             <section>
                 <div>
-                    <h4>Projet 2</h4>
+                    <h4>Sonic Unleashed 3DS</h4>
+                    <img src="images/SonicUnleashed3DS_logo.png">
+                </div>
+                <hr>
+                <p>
+                    Mini texte qui explique le projet en quelques mots/phrases tout en restant consis et je rajoute du texte
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <h4>Snow Bold</h4>
                     <img src="images/photo.png">
                 </div>
                 <hr>
@@ -60,7 +78,7 @@
         <article>
             <section>
                 <div>
-                    <h4>Projet 3</h4>
+                    <h4>Agora</h4>
                     <img src="images/photo.png">
                 </div>
                 <hr>
@@ -73,33 +91,7 @@
         <article>
             <section>
                 <div>
-                    <h4>Projet 4</h4>
-                    <img src="images/photo.png">
-                </div>
-                <hr>
-                <p>
-                    Mini texte qui explique le projet en quelques mots/phrases tout en restant consis et je rajoute du texte
-                </p>
-            </section>
-        </article>
-
-        <article>
-            <section>
-                <div>
-                    <h4>Projet 5</h4>
-                    <img src="images/photo.png">
-                </div>
-                <hr>
-                <p>
-                    Mini texte qui explique le projet en quelques mots/phrases tout en restant consis et je rajoute du texte
-                </p>
-            </section>
-        </article>
-
-        <article>
-            <section>
-                <div>
-                    <h4>Projet 6</h4>
+                    <h4>Bouncy Edge</h4>
                     <img src="images/photo.png">
                 </div>
                 <hr>
@@ -111,7 +103,37 @@
     </main>
 
     <footer>
-        footer
+        Site réalisé par Yanis Makloufi dans le cadre du portfolio 2023
     </footer>
 </body>
+<script type="text/javascript">
+    let constrain = 500;
+    let ex1Layer = document.getElementsByClassName("rotator")[0];
+    let ex2Layer = document.getElementsByClassName("parallax")[0];
+
+    function transforms(x, y, el) {
+        let box = el.getBoundingClientRect();
+        let calcX = -(y - box.y - (box.height / 2)) / constrain;
+        let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+        return "perspective(100px) "
+            + "   rotateX("+ calcX*3 +"deg) "
+            + "   rotateY("+ calcY +"deg) ";
+    };
+
+    function transformElement(el, xyEl) {
+        el.style.transform  = transforms.apply(null, xyEl);
+    }
+
+    document.onmousemove = function(e) {
+        let xy = [e.clientX, e.clientY];
+        let position = xy.concat([ex1Layer]);
+
+        let box = ex2Layer.getBoundingClientRect();
+        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*10;
+
+        ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+        transformElement(ex1Layer, position);
+    };
+</script>
 </html>

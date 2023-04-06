@@ -7,25 +7,22 @@
     <title>Title</title>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="parallax">
+        <div class="rotator">
             <h1>PORTFOLIO</h1>
             <h3>YANIS MAKLOUFI</h3>
-            <hr>
-            <nav>
-                <a href="index.html">Présentation</a>
-                <a href="projects.html">Projets</a>
-            </nav>
         </div>
-        <div>
-
-        </div>
+        <nav>
+            <a href="index.html">Présentation</a>
+            <a href="projects.html">Projets</a>
+        </nav>
     </header>
 
     <div>
         <h2>PRÉSENTATION</h2>
-        <h3>Voici une liste non exaustive des projets que j'ai réalisé tout au long de ma carrière</h3>
+        <h3>Bonjour, si vous etes la, c'est que vous avez envie d'en savoir plus sur ma personne</h3>
     </div>
+    <hr>
     <main>
         <article>
             <section>
@@ -38,7 +35,7 @@
                 </p>
             </section>
         </article>
-
+        <hr>
         <article>
             <section>
                 <div>
@@ -49,7 +46,7 @@
                 </p>
             </section>
         </article>
-
+        <hr>
         <article>
             <section>
                 <div>
@@ -60,7 +57,7 @@
                 </p>
             </section>
         </article>
-
+        <hr>
         <article>
             <section>
                 <div>
@@ -71,7 +68,7 @@
                 </p>
             </section>
         </article>
-
+        <hr>
         <article>
             <section>
                 <div>
@@ -83,10 +80,39 @@
             </section>
         </article>
     </main>
-
     <footer>
         Site réalisé par Yanis Makloufi dans le cadre du portfolio
         2023
     </footer>
 </body>
+<script type="text/javascript">
+    let constrain = 500;
+    let ex1Layer = document.getElementsByClassName("rotator")[0];
+    let ex2Layer = document.getElementsByClassName("parallax")[0];
+
+    function transforms(x, y, el) {
+        let box = el.getBoundingClientRect();
+        let calcX = -(y - box.y - (box.height / 2)) / constrain;
+        let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+        return "perspective(100px) "
+            + "   rotateX("+ calcX*3 +"deg) "
+            + "   rotateY("+ calcY +"deg) ";
+    };
+
+    function transformElement(el, xyEl) {
+        el.style.transform  = transforms.apply(null, xyEl);
+    }
+
+    document.onmousemove = function(e) {
+        let xy = [e.clientX, e.clientY];
+        let position = xy.concat([ex1Layer]);
+
+        let box = ex2Layer.getBoundingClientRect();
+        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*10;
+
+        ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+        transformElement(ex1Layer, position);
+    };
+</script>
 </html>

@@ -1,13 +1,15 @@
 article{
-     background-color: #ecd24d;
-     transform: rotateZ(2deg) skew(2deg);
-     margin:15% 0;
+    background-color: #729ece;
+    margin:5% 0;
+    width:80%;
+    border-radius: 0 150px 150px 0;
+    box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
  }
 
 section{
-    width: 75%;
+    width: 80%;
     margin:auto;
-    height: 450px;
+    height: 600px;
     display: flex;
     align-items: center;
 }
@@ -17,7 +19,7 @@ section > div {
     min-width:250px;
     text-align: center;
     margin-right:10%;
-    background-color: #f8e37a;
+    background-color: #b3c6db;
     height: 100%;
 }
 
@@ -26,16 +28,17 @@ p{
     padding: 1%;
     border: solid #eeeeed;
     border-width: 0 0 5px 5px;
-    border-radius: 5px 5px 5px 20px;
+    border-radius: 5px 5px 5px 45px;
     max-height: 350px;
     overflow-y: auto;
 }
 
 section img {
     display: block;
-    border: 5px solid #4b4406;
-    width:70%;
+    border: 6px solid #3465a3;
+    width:80%;
     margin: auto;
+    border-radius: 1000px;
 }
 
 main{
