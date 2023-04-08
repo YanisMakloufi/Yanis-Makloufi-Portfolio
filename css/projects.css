@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     margin: auto;
 }
@@ -13,12 +13,12 @@ body{
 article{
     transition:0.3s;
 
-    width:450px;
+    width:100%;
     margin:50px 0;
     background-color: #b3c6db;
     padding: 1%;
     border-radius: 80px;
-    max-width: 40%;
+    max-width: 50vh;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 

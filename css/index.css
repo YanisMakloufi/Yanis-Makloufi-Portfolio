@@ -1,13 +1,21 @@
-article{
-    background-color: #729ece;
+article.side{
     margin:5% 0;
-    width:80%;
-    border-radius: 0 150px 150px 0;
+    width:85%;
+    background-color: #729ece;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
- }
+}
+
+article.side:nth-of-type(odd) {
+    border-radius: 0 150px 150px 0;
+}
+
+article.side:nth-of-type(even) {
+    border-radius: 150px 0 0 150px;
+    margin-left: 15%;
+}
 
 section{
-    width: 80%;
+    width: 85%;
     margin:auto;
     height: 600px;
     display: flex;
@@ -18,7 +26,7 @@ section > div {
     width:250%;
     min-width:250px;
     text-align: center;
-    margin-right:10%;
+    margin-right:5%;
     background-color: #b3c6db;
     height: 100%;
 }
@@ -29,7 +37,8 @@ p{
     border: solid #eeeeed;
     border-width: 0 0 5px 5px;
     border-radius: 5px 5px 5px 45px;
-    max-height: 350px;
+    max-height: 90%;
+    /*width: 200%;*/
     overflow-y: auto;
 }
 

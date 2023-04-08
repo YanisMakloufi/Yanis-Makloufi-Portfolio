@@ -80,8 +80,9 @@ header{
     height: 850px;
     min-height: 90vh;
     margin-bottom:3%;
-    background-image: url("../images/6066657_blur.png");
-    background-size: auto 110%;
+    background-image: url("../images/6066657_blur1.png");
+    background-size: cover;
+    background-position: center;
     color: #dde5ee;
 }
 
@@ -92,21 +93,28 @@ header > div {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
+nav {
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+}
+
 hr{
-    height:5px;
-    width: 60%;
+    height:8px;
+    width: 70%;
     background-color: #3465a3;
     border-radius:100px;
     margin:15px auto;
+    border: none;
 }
 
 a{
-    text-decoration: none;
-    margin:0 5%;
+    text-decoration: none
 }
 
 footer {
     background-color: #355269;
+    height:100px;
     margin-top:5%;
     padding: 2%;
 }
