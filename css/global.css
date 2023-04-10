@@ -41,13 +41,13 @@ h1{
     animation-fill-mode: both;
 
     margin:0;
-    font-size: 78px;
+    font-size: max(6vw,96px);
+    line-height: max(7vw,106px);
     font-family: "Nunito-Black", serif;
 }
 
 h3{
     font-family: "Nunito-Regular", serif;
-    font-size: 26px;
 }
 
 header h3{
@@ -55,6 +55,8 @@ header h3{
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
+    font-size: max(3vw,36px);
+    line-height: max(4vw,42px);
 
     margin:0;
 }
