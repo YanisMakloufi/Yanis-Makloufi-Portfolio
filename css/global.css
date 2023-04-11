@@ -119,8 +119,14 @@ hr{
     border: none;
 }
 
+header a{
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    color: #dde5ee;
+}
+
 a{
-    text-decoration: none
+    text-decoration: none;
 }
 
 footer {

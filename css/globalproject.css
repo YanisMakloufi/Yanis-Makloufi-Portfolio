@@ -5,18 +5,45 @@ p.more{
     border-radius: 50px;
     max-height: 90%;
     overflow-y: auto;
-    width:70%;
+    width:80%;
     margin: auto;
     text-align: left;
 }
 
 aside{
-    width: 35%;
+    width: 40%;
     display: inline-block;
     margin:2%;
 }
 
+p, aside{
+    margin:2% 0;
+    text-align: left;
+    padding: 1%;
+    font-size: 24px;
+    border: solid #eeeeed;
+    border-width: 0 0 5px 5px;
+    border-radius: 5px 5px 5px 45px;
+}
+
+p{
+    width:90%;
+    margin:5% 0 0 0;
+}
+
 iframe{
+    margin: 5% auto;
     border-radius: 30px;
     border-style: none;
+}
+
+img{
+    max-width:50%;
+    float: left;
+    margin: auto;
+}
+
+main{
+    width: 90%;
+    margin: auto;
 }
