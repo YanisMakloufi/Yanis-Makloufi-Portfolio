@@ -1,0 +1,22 @@
+p.more{
+    padding: 2% 0 2% 5%;
+    font-size: 26px;
+    border: solid #FFBD59 6px;
+    border-radius: 50px;
+    max-height: 90%;
+    overflow-y: auto;
+    width:70%;
+    margin: auto;
+    text-align: left;
+}
+
+aside{
+    width: 35%;
+    display: inline-block;
+    margin:2%;
+}
+
+iframe{
+    border-radius: 30px;
+    border-style: none;
+}

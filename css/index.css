@@ -1,23 +1,28 @@
 article.side{
     margin:5% 0;
-    height: 50vh;
+    height: 55vh;
     width:85%;
     padding:0;
 }
 
 article{
+    text-align: left;
     margin: auto;
     padding:2%;
     min-height: 500px;
     border-radius: 50px;
-    height: 70vh;
-    width:60%;
+    height: 65vh;
+    width:45%;
     background-color: #729ece;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 
 article.side:nth-of-type(odd) {
     border-radius: 0 150px 150px 0;
+}
+
+article.side div {
+    border-radius: 65px;
 }
 
 article.side:nth-of-type(even) {
@@ -34,7 +39,7 @@ section{
 }
 
 section > div {
-    width:100%;
+    width:45%;
     min-width:250px;
     text-align: center;
     margin-right:5%;
@@ -43,7 +48,6 @@ section > div {
 }
 
 p{
-    vertical-align: middle;
     padding: 1%;
     font-size: 26px;
     border: solid #eeeeed;
@@ -51,12 +55,13 @@ p{
     border-radius: 5px 5px 5px 45px;
     max-height: 90%;
     overflow-y: auto;
+    width:90%;
 }
 
 section img {
     display: block;
     border: 6px solid #3465a3;
-    width:60%;
+    width:70%;
     margin: auto;
     border-radius: 1000px;
 }
