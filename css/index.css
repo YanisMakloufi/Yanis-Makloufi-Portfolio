@@ -1,15 +1,15 @@
 article.side{
     margin:5% 0;
-    height: 55vh;
     width:85%;
     padding:0;
+    align-items: center;
 }
 
 article{
     text-align: left;
     margin: auto;
     padding:2%;
-    min-height: 500px;
+    display: flex;
     border-radius: 50px;
     height: 65vh;
     width:45%;
@@ -21,33 +21,22 @@ article.side:nth-of-type(odd) {
     border-radius: 0 150px 150px 0;
 }
 
-article.side div {
-    border-radius: 65px;
-}
-
 article.side:nth-of-type(even) {
     border-radius: 150px 0 0 150px;
     margin-left: 15%;
 }
 
-section{
-    width: 85%;
-    margin:auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-section > div {
-    width:45%;
+article > header {
+    width:30%;
     min-width:250px;
+    border-radius: 65px;
     text-align: center;
-    margin-right:5%;
+    margin:0 5%;
     background-color: #b3c6db;
-    height: 100%;
+    height: inherit;
 }
 
-p{
+article > p{
     padding: 1%;
     font-size: 24px;
     border: solid #eeeeed;
@@ -55,7 +44,7 @@ p{
     border-radius: 5px 5px 5px 45px;
     max-height: 90%;
     overflow-y: auto;
-    width:90%;
+    width:50%;
 }
 
 p.more{
@@ -70,13 +59,39 @@ p.more{
     text-align: left;
 }
 
-section img {
+article img {
     display: block;
     border: 6px solid #3465a3;
     width:70%;
     margin: auto;
     border-radius: 1000px;
 }
+
+article#formation{
+    border-radius: 500px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+article#formation > hr{
+    width:20%;
+}
+
+article#formation > section > div{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 200px;
+    background-color: red;
+    transition: 0.2s;
+}
+
+article#formation > section > div:hover{
+    width: 8vw;
+    height: 8vw;
+    background-color: red;
+}
+
 
 main{
     margin:auto;
