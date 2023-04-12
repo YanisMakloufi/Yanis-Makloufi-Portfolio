@@ -58,6 +58,18 @@ p{
     width:90%;
 }
 
+p.more{
+    padding: 2% 0 2% 5%;
+    font-size: 26px;
+    border: solid #FFBD59 6px;
+    border-radius: 50px;
+    max-height: 90%;
+    overflow-y: auto;
+    width:80%;
+    margin: 5% auto;
+    text-align: left;
+}
+
 section img {
     display: block;
     border: 6px solid #3465a3;
