@@ -28,12 +28,12 @@
 
 body {
     margin: 0;
-    /*background-color: #dde5ee;*/
+
     background: linear-gradient(160deg, rgba(156,208,255,1) 20%, rgba(221,229,238,1) 100%);
 
     font-size: 22px;
     font-family: "Nunito-Regular", serif;
-    color: #202123;
+    color: #373230;
 }
 
 h1{
@@ -131,10 +131,14 @@ a{
 
 footer {
     background-color: #355269;
-    height:100px;
+    min-height:100px;
     margin-top:5%;
     padding: 2%;
     color: #FFE8DB;
+}
+footer a > img{
+    width: 5vw;
+    margin: 0 5%;
 }
 
 /*----- V ANIMATIONS V -----*/
