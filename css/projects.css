@@ -39,7 +39,7 @@ article:hover{
 }
 
 article:hover img{
-    box-shadow: 17px 33px 33px rgba(53, 28, 117, 0.3);
+    filter: drop-shadow(17px 33px 15px rgba(53, 28, 117, 0.3));
     transform: scale(1.1);
     z-index: 1;
 }

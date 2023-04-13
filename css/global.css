@@ -138,7 +138,8 @@ footer {
 }
 footer a > img{
     width: 5vw;
-    margin: 0 5%;
+    margin: 0 3%;
+    filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
 }
 
 /*----- V ANIMATIONS V -----*/
