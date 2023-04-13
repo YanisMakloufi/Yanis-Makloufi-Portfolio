@@ -94,14 +94,14 @@ body > header{
     background-image: url("../images/6066657_blur1.png");
     background-size: cover;
     background-position: center;
-    color: #dde5ee;
+    color: #FFE8DB;
 }
 
 body > header > div {
-    border: solid 6px #dde5ee;
+    border: solid 6px #FFE8DB;
     padding: 10px 30px;
     border-radius: 1000px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 10px rgba(255, 232, 219, 0.6);
 }
 
 nav {
@@ -113,7 +113,7 @@ nav {
 hr{
     height:7px;
     width: 70%;
-    background-color: #3465a3;
+    background-color: #2d5e9b;
     border-radius:100px;
     margin:15px auto;
     border: none;
@@ -121,8 +121,8 @@ hr{
 
 body > header a{
     text-decoration: none;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-    color: #dde5ee;
+    text-shadow: 0 0 10px rgba(255, 232, 219, 0.6);
+    color: #FFE8DB;
 }
 
 a{

@@ -39,7 +39,7 @@ article > header {
 article > p{
     padding: 1%;
     font-size: 24px;
-    border: solid #eeeeed;
+    border: solid #FFE8DB;
     border-width: 0 0 5px 5px;
     border-radius: 5px 5px 5px 45px;
     max-height: 90%;
@@ -68,30 +68,79 @@ article img {
 }
 
 article#formation{
-    border-radius: 500px;
+    border-radius: 250px;
     width: 90%;
+    height: 60vh;
     display: flex;
     align-items: center;
 }
 
-article#formation > hr{
-    width:20%;
+ol {
+    margin: 100px;
+    height: 8px;
+    background: #2D5E9B;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 100px;
+    padding: 0;
 }
 
-article#formation > section > div{
-    width: 5vw;
-    height: 5vw;
-    border-radius: 200px;
-    background-color: red;
+/* ---- Timeline elements ---- */
+li {
+    display: inline-block;
+    height: fit-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    margin-top: 3.5vw;
+    width: 100%;
+    transition: 0.2s;
+    text-align: center;
+}
+li .diplome {
+    color: #000000;
     transition: 0.2s;
 }
-
-article#formation > section > div:hover{
-    width: 8vw;
-    height: 8vw;
-    background-color: red;
+li .point {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    margin:auto;
+    border: 1vw solid #2D5E9B;
+    border-radius: 1000px;
+    background: #FFE8DB;
+    transition: 0.2s;
+}
+li .description {
+    border: 6px solid #FFBD59;
+    border-width: 0 6px 6px 6px;
+    padding: 1vw;
+    margin-top: 20px;
+    position: absolute;
+    font-weight: normal;
+    z-index: 1;
+    width: 20vw;
+    right: 50%;
+    transform: translateX(50%);
+    transition: 0.2s;
+    border-radius: 6px 6px 2vw 2vw;
+    opacity: 0;
 }
 
+/* ---- Hover effects ---- */
+li:hover {
+    cursor: pointer;
+    margin-top: 4vw;
+}
+li:hover .point{
+    height: 7vw;
+    width: 7vw;
+    border-width: 0.5vw;
+}
+li:hover .description {
+    opacity: 1;
+}
 
 main{
     margin:auto;
