@@ -109,12 +109,10 @@ li {
     transform: translateY(-100%);
     margin-top: 3.5vw;
     width: 100%;
-    transition: 0.2s;
     text-align: center;
 }
 li .diplome {
     color: #000000;
-    transition: 0.2s;
 }
 li .point {
     display: block;
@@ -124,7 +122,6 @@ li .point {
     border: 1vw solid #2D5E9B;
     border-radius: 1000px;
     background: #FFE8DB;
-    transition: 0.2s;
 }
 li .description {
     border: 6px solid #FFBD59;
@@ -137,7 +134,6 @@ li .description {
     width: 20vw;
     right: 50%;
     transform: translateX(50%);
-    transition: 0.2s;
     border-radius: 6px 6px 2vw 2vw;
     opacity: 0;
 }

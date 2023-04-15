@@ -26,6 +26,10 @@
 
 /*----- V GLOBAL V -----*/
 
+*{
+    transition: 0.25s;
+}
+
 body {
     margin: 0;
 
@@ -95,6 +99,7 @@ body > header{
     background-size: cover;
     background-position: center;
     color: #FFE8DB;
+    transition: 0s;
 }
 
 body > header > div {
@@ -102,6 +107,7 @@ body > header > div {
     padding: 10px 30px;
     border-radius: 1000px;
     text-shadow: 0 0 10px rgba(255, 232, 219, 0.6);
+    transition: 0s;
 }
 
 header nav {
@@ -127,6 +133,9 @@ body > header a{
 
 a{
     text-decoration: none;
+}
+a:hover, a > img:hover{
+    transform: scale(1.1);
 }
 
 footer {

@@ -7,8 +7,6 @@ main{
 }
 
 article{
-    transition:0.3s;
-
     width:550px;
     margin:60px 0;
     background-color: #b3c6db;
@@ -19,7 +17,6 @@ article{
 }
 
 main img{
-    transition:0.3s;
     display: block;
     margin:auto;
     width:60%;
