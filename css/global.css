@@ -104,7 +104,7 @@ body > header > div {
     text-shadow: 0 0 10px rgba(255, 232, 219, 0.6);
 }
 
-nav {
+header nav {
     width:250px;
     display: flex;
     justify-content: space-between;
@@ -137,9 +137,13 @@ footer {
     color: #FFE8DB;
 }
 footer a > img{
-    width: 5vw;
+    width: 4vw;
     margin: 0 3%;
     filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
+}
+
+footer svg{
+    color : red;
 }
 
 /*----- V ANIMATIONS V -----*/

@@ -1,4 +1,4 @@
-p.more{
+div.more{
     padding: 2% 0 2% 5%;
     font-size: 26px;
     border: solid #FFBD59 6px;
@@ -8,6 +8,17 @@ p.more{
     width:80%;
     margin: auto;
     text-align: left;
+}
+
+div.more nav{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+div.more img{
+    width:4vw;
+    margin: 0 5%;
 }
 
 aside{
