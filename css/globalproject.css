@@ -16,7 +16,7 @@ aside{
     margin:2%;
 }
 
-p, aside{
+main p, aside{
     margin:2% 0;
     text-align: left;
     padding: 1%;
@@ -26,7 +26,7 @@ p, aside{
     border-radius: 5px 5px 5px 45px;
 }
 
-p{
+main p{
     width:90%;
     margin:5% 0 0 0;
 }
@@ -37,7 +37,7 @@ iframe{
     border-style: none;
 }
 
-img{
+main img{
     max-width:50%;
     float: left;
     margin: auto;

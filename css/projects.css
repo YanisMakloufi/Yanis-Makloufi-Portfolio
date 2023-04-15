@@ -18,7 +18,7 @@ article{
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 
-img{
+main img{
     transition:0.3s;
     display: block;
     margin:auto;
