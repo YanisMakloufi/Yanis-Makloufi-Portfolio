@@ -3,6 +3,7 @@ article.side{
     width:85%;
     padding:0;
     align-items: center;
+    height: 400px;
 }
 
 article{
@@ -16,6 +17,7 @@ article{
     background-color: #729ece;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
+
 article#biography{
     display: block;
     text-align: left;
@@ -24,6 +26,7 @@ article#biography{
     background-color: #729ece;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
+
 article#biography img {
     display: block;
     float: right;
@@ -32,11 +35,45 @@ article#biography img {
     margin: auto;
     border-radius: 1000px;
 }
+
 article#biography h4 {
     width:20%;
+    margin-left: 10%;
 }
+
 article#biography p {
-    width:70%;
+    width:60%;
+    margin-left: 10%;
+}
+
+article#competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    background: unset;
+    box-shadow: unset;
+}
+
+article#competences section {
+    background-size: contain;
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    width:90%;
+    max-width: 550px;
+    margin:50px 0;
+    height:550px;
+    padding: 1%;
+    /*max-width: 90%;*/
+}
+
+article#competences section * {
+    position: relative;
+    top:28%;
 }
 
 article.side:nth-of-type(odd) {
@@ -82,11 +119,13 @@ p.more{
 }
 
 article#formation{
-    border-radius: 250px;
+    /*border-radius: 250px;*/
     width: 90%;
+    background-color: unset;
     height: 60vh;
     display: flex;
     align-items: center;
+    box-shadow: unset;
 }
 
 ol {
@@ -108,7 +147,7 @@ li {
     top: 50%;
     transform: translateY(-100%);
     margin-top: 3.5vw;
-    width: 100%;
+    width: 20%;
     text-align: center;
 }
 li .diplome {

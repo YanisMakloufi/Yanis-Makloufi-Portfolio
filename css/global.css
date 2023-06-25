@@ -95,7 +95,7 @@ body > header{
     height: 850px;
     min-height: 90vh;
     margin-bottom:3%;
-    background-image: url("../images/backgrounds/6066657_blur1.png");
+    background: linear-gradient(rgba(156,208,255,0) 95%, rgba(156,208,255,1)), url('../images/backgrounds/6066657_blur1.png');
     background-size: cover;
     background-position: center;
     color: #FFE8DB;
@@ -103,9 +103,9 @@ body > header{
 }
 
 body > header > div {
-    border: solid 6px #FFE8DB;
+    /*border: solid 6px #FFE8DB;*/
     padding: 10px 30px;
-    border-radius: 1000px;
+    /*border-radius: 1000px;*/
     text-shadow: 0 0 10px rgba(255, 232, 219, 0.6);
     transition: 0s;
 }
@@ -145,6 +145,7 @@ footer {
     padding: 2%;
     color: #FFE8DB;
 }
+
 footer a > img{
     width: 4vw;
     margin: 0 3%;
