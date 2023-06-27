@@ -71,6 +71,12 @@ article#competences section {
     /*max-width: 90%;*/
 }
 
+main > div{
+    background-color: #3465A4;
+    padding: 10px;
+    color: #FFE8DB;
+}
+
 article#competences section * {
     position: relative;
     top:25%;
