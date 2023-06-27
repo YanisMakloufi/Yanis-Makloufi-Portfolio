@@ -25,9 +25,10 @@ aside{
     width: 40%;
     display: inline-block;
     margin:2%;
+    /*float: right;*/
 }
 
-main p, aside{
+main div{
     margin:2% 0;
     text-align: left;
     padding: 1%;
@@ -42,8 +43,12 @@ main p{
     margin:5% 0 0 0;
 }
 
-iframe{
+figure{
     margin: 5% auto;
+    font-style: italic;
+}
+
+iframe{
     border-radius: 30px;
     border-style: none;
 }

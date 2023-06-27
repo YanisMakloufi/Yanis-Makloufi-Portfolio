@@ -73,7 +73,7 @@ article#competences section {
 
 article#competences section * {
     position: relative;
-    top:28%;
+    top:25%;
 }
 
 article.side:nth-of-type(odd) {
