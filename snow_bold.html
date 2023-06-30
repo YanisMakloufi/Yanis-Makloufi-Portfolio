@@ -1,87 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/globalproject.css">
-    <title>Title</title>
-</head>
-<body>
-<header class="parallax">
-    <div class="rotator">
-        <h1>PORTFOLIO</h1>
-        <h3>YANIS MAKLOUFI</h3>
-    </div>
-    <nav>
-        <a href="index.html">Présentation</a>
-        <a href="projects.html">Projets</a>
-    </nav>
-</header>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/globalproject.css">
+        <title>Title</title>
+    </head>
 
-<div>
-    <h2>SNOW BOLD</h2>
-    <h3>Jeu vidéo réalisé lors du Game Jam de 48h seul</h3>
-</div>
-<hr>
-<main>
-    <img src="images/snow_bold/screen01.png">
-    <aside>
+    <body>
+        <header class="parallax">
+            <div class="rotator">
+                <h1>PORTFOLIO</h1>
+                <h3>YANIS MAKLOUFI</h3>
+            </div>
+            <nav>
+                <a href="index.html">Présentation</a>
+                <a href="projects.html">Projets</a>
+            </nav>
+        </header>
+
         <div>
-            <h2>Résumé</h2>
-            Le projet à débuté en 2018 et toujours en cours maintenant, Sonic Illusion est un jeu qui s'inspire de la franchise sonic,
-            tout en implémentant son propre univers et ses propre fonctionnalités.
-            <!--Contexte du projet (commande académique, contraintes dans la réalisation, durée, en équipe ou seul…)-->
-            <!--<br>-->
-            <!--Méthodes de travail et résultats obtenus avec des preuves (gif, copie d’écran, la vidéo de projet…)-->
+            <h2>SNOW BOLD</h2>
+            <h3>Jeu vidéo réalisé lors du Game Jam de 48h seul</h3>
         </div>
-    </aside>
-    <div>
-        Ce projet m'a permis de grandement améliorer ma connaissance en algorithmie ainsi que la gestion de projet,
-        dû a l'angouement qu'a suscité le jeu j'ai du organisé de manière efficace l'ajout de nouvelle fonctionnalité pour les faire correspondre aux deadline
-    </div>
-    <div class="more">
-        En savoir plus
-        <nav>
-            <a href="https://ynox.itch.io/snow-bold" target="_blank">
-                <img src="images/itchio_logo.png">
-            </a>
-        </nav>
-    </div>
-</main>
-<footer>
-    <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png"></a>
-    <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png"></a>
-    <p>Site réalisé par Yanis Makloufi | 2023</p>
-</footer>
-</body>
-<script type="text/javascript">
-    let constrain = 500;
-    let ex1Layer = document.getElementsByClassName("rotator")[0];
-    let ex2Layer = document.getElementsByClassName("parallax")[0];
+        <hr>
+        <main>
+            <img src="images/snow_bold/screen01.png" alt="Capture d'une partie de Snow Bold">
+            <aside>
+                <div>
+                    <h2>Résumé</h2>
+                    Le projet à débuté en 2018 et toujours en cours maintenant, Sonic Illusion est un jeu qui s'inspire de la franchise sonic,
+                    tout en implémentant son propre univers et ses propre fonctionnalités.
+                    <!--Contexte du projet (commande académique, contraintes dans la réalisation, durée, en équipe ou seul…)-->
+                    <!--<br>-->
+                    <!--Méthodes de travail et résultats obtenus avec des preuves (gif, copie d’écran, la vidéo de projet…)-->
+                </div>
+            </aside>
+            <div>
+                Ce projet m'a permis de grandement améliorer ma connaissance en algorithmie ainsi que la gestion de projet,
+                dû a l'angouement qu'a suscité le jeu j'ai du organisé de manière efficace l'ajout de nouvelle fonctionnalité pour les faire correspondre aux deadline
+            </div>
+            <div class="more">
+                En savoir plus
+                <nav>
+                    <a href="https://ynox.itch.io/snow-bold" target="_blank">
+                        <img src="images/itchio_logo.png" alt="logo itchio">
+                    </a>
+                </nav>
+            </div>
+        </main>
 
-    function transforms(x, y, el) {
-        let box = el.getBoundingClientRect();
-        let calcX = -(y - box.y - (box.height / 2)) / constrain;
-        let calcY = (x - box.x - (box.width / 2)) / constrain;
+        <footer>
+            <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png" alt="logo github"></a>
+            <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png" alt="logo linkedin"></a>
+            <p>Site réalisé par Yanis Makloufi | 2023</p>
+        </footer>
 
-        return "perspective(calc(400px - 2vw)) "
-            + "   rotateX("+ calcX*3 +"deg) "
-            + "   rotateY("+ calcY +"deg) ";
-    };
+        <script>
+            let constrain = 500;
+            let ex1Layer = document.getElementsByClassName("rotator")[0];
+            let ex2Layer = document.getElementsByClassName("parallax")[0];
 
-    function transformElement(el, xyEl) {
-        el.style.transform  = transforms.apply(null, xyEl);
-    }
+            function transforms(x, y, el) {
+                let box = el.getBoundingClientRect();
+                let calcX = -(y - box.y - (box.height / 2)) / constrain;
+                let calcY = (x - box.x - (box.width / 2)) / constrain;
 
-    document.onmousemove = function(e) {
-        let xy = [e.clientX, e.clientY];
-        let position = xy.concat([ex1Layer]);
+                return "perspective(calc(400px - 2vw)) "
+                    + "   rotateX("+ calcX*3 +"deg) "
+                    + "   rotateY("+ calcY +"deg) ";
+            };
 
-        let box = ex2Layer.getBoundingClientRect();
-        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
+            function transformElement(el, xyEl) {
+                el.style.transform  = transforms.apply(null, xyEl);
+            }
 
-        ex2Layer.style = "background-position: " + (calcY+50) + "% center";
-        transformElement(ex1Layer, position);
-    };
-</script>
+            document.onmousemove = function(e) {
+                let xy = [e.clientX, e.clientY];
+                let position = xy.concat([ex1Layer]);
+
+                let box = ex2Layer.getBoundingClientRect();
+                let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
+
+                ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+                transformElement(ex1Layer, position);
+            };
+        </script>
+    </body>
 </html>

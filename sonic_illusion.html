@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/global.css">
@@ -24,7 +24,7 @@
     </div>
     <hr>
     <main>
-        <img src="images/sonic_illusion/si_screen01.png">
+        <img src="images/sonic_illusion/si_screen01.png" alt="Capture d'écran de sonic Illusion">
         <aside>
             <div>
                 <h2>Résumé</h2>
@@ -49,61 +49,63 @@
             dû à l'engouement qu'a suscité le jeu j'ai dû organiser de manière efficace l'ajout de nouvelle fonctionnalité pour les faire correspondre aux deadlines
         </div>
         <figure>
-            <iframe width="90%" height="500vh" src="https://www.youtube.com/embed/78HB_sVqGPE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="width:90%; height:500px" src="https://www.youtube.com/embed/78HB_sVqGPE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>Dernière video du projet Sonic Illusion</figcaption>
         </figure>
         <div class="more">
             En savoir plus
             <nav>
                 <a href="https://discord.gg/nKnPabh" target="_blank">
-                    <img src="images/discord_logo.png">
+                    <img src="images/discord_logo.png" alt="logo discord">
                 </a>
                 <a href="https://www.youtube.com/@SonicIllusionFANGAME" target="_blank">
-                    <img src="images/youtube_logo.png">
+                    <img src="images/youtube_logo.png" alt="logo youtube">
                 </a>
                 <a href="https://twitter.com/Sonic_Illusion_?s=20" target="_blank">
-                    <img src="images/twitter_logo.png">
+                    <img src="images/twitter_logo.png" alt="logo twitter">
                 </a>
                 <a href="https://gamejolt.com/games/sonic-illusion/487242" target="_blank">
-                    <img src="images/gamejolt_logo.png">
+                    <img src="images/gamejolt_logo.png" alt="logo gamejolt">
                 </a>
             </nav>
         </div>
     </main>
     <footer>
-        <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png"></a>
-        <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png"></a>
+        <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png" alt="logo github"></a>
+        <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png" alt="logo linkedin"></a>
         <p>Site réalisé par Yanis Makloufi | 2023</p>
     </footer>
+
+    <script>
+        let constrain = 500;
+        let ex1Layer = document.getElementsByClassName("rotator")[0];
+        let ex2Layer = document.getElementsByClassName("parallax")[0];
+
+        function transforms(x, y, el) {
+            let box = el.getBoundingClientRect();
+            let calcX = -(y - box.y - (box.height / 2)) / constrain;
+            let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+            return "perspective(calc(400px - 2vw)) "
+                + "   rotateX("+ calcX*3 +"deg) "
+                + "   rotateY("+ calcY +"deg) ";
+        };
+
+        function transformElement(el, xyEl) {
+            el.style.transform  = transforms.apply(null, xyEl);
+        }
+
+        document.onmousemove = function(e) {
+            let xy = [e.clientX, e.clientY];
+            let position = xy.concat([ex1Layer]);
+
+            let box = ex2Layer.getBoundingClientRect();
+            let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
+
+            ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+            transformElement(ex1Layer, position);
+        };
+    </script>
 </body>
-<script type="text/javascript">
-    let constrain = 500;
-    let ex1Layer = document.getElementsByClassName("rotator")[0];
-    let ex2Layer = document.getElementsByClassName("parallax")[0];
 
-    function transforms(x, y, el) {
-        let box = el.getBoundingClientRect();
-        let calcX = -(y - box.y - (box.height / 2)) / constrain;
-        let calcY = (x - box.x - (box.width / 2)) / constrain;
-
-        return "perspective(calc(400px - 2vw)) "
-            + "   rotateX("+ calcX*3 +"deg) "
-            + "   rotateY("+ calcY +"deg) ";
-    };
-
-    function transformElement(el, xyEl) {
-        el.style.transform  = transforms.apply(null, xyEl);
-    }
-
-    document.onmousemove = function(e) {
-        let xy = [e.clientX, e.clientY];
-        let position = xy.concat([ex1Layer]);
-
-        let box = ex2Layer.getBoundingClientRect();
-        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
-
-        ex2Layer.style = "background-position: " + (calcY+50) + "% center";
-        transformElement(ex1Layer, position);
-    };
-</script>
 </html>

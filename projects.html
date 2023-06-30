@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/global.css">
@@ -29,7 +29,7 @@
             <section>
                 <div>
                     <h4>Sonic Illusion</h4>
-                    <img src="images/games_logo/SonicIllusion_logo.png">
+                    <img src="images/games_logo/SonicIllusion_logo.png" alt="Logo de Sonic Illusion">
                 </div>
                 <hr>
                 <p>
@@ -46,7 +46,7 @@
             <section>
                 <div>
                     <h4>Temporal Rift</h4>
-                    <img src="images/games_logo/TemporalRift_logo.png">
+                    <img src="images/games_logo/TemporalRift_logo.png" alt="Logo de Temporal Rift">
                 </div>
                 <hr>
                 <p>
@@ -62,7 +62,7 @@
             <section>
                 <div>
                     <h4>Sonic Unleashed 3DS</h4>
-                    <img src="images/games_logo/SonicUnleashed3DS_logo.png">
+                    <img src="images/games_logo/SonicUnleashed3DS_logo.png" alt="Logo de Sonic Unleashed 3DS">
                 </div>
                 <hr>
                 <p>
@@ -78,7 +78,7 @@
             <section>
                 <div>
                     <h4>Snow Bold</h4>
-                    <img src="images/games_logo/SnowBold_logo.png">
+                    <img src="images/games_logo/SnowBold_logo.png" alt="Logo de Snow Bold">
                 </div>
                 <hr>
                 <p>
@@ -94,7 +94,7 @@
             <section>
                 <div>
                     <h4>Aventuriers du rails</h4>
-                    <img src="images/games_logo/AventuriersDuRail_logo.jpeg">
+                    <img src="images/games_logo/AventuriersDuRail_logo.jpeg" alt="Logo des aventuriers du rail">
                 </div>
                 <hr>
                 <p>
@@ -110,7 +110,7 @@
             <section>
                 <div>
                     <h4>Bouncy Edge</h4>
-                    <img src="images/games_logo/BouncyEdge_logo.png">
+                    <img src="images/games_logo/BouncyEdge_logo.png" alt="Logo de Bouncy Edge">
                 </div>
                 <hr>
                 <p>
@@ -124,39 +124,41 @@
     </main>
 
     <footer>
-        <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png"></a>
-        <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png"></a>
+        <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png" alt="logo github"></a>
+        <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png" alt="logo linkedin"></a>
         <p>Site réalisé par Yanis Makloufi | 2023</p>
     </footer>
+
+    <script>
+        let constrain = 500;
+        let ex1Layer = document.getElementsByClassName("rotator")[0];
+        let ex2Layer = document.getElementsByClassName("parallax")[0];
+
+        function transforms(x, y, el) {
+            let box = el.getBoundingClientRect();
+            let calcX = -(y - box.y - (box.height / 2)) / constrain;
+            let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+            return "perspective(calc(400px - 2vw)) "
+                + "   rotateX("+ calcX*3 +"deg) "
+                + "   rotateY("+ calcY +"deg) ";
+        };
+
+        function transformElement(el, xyEl) {
+            el.style.transform  = transforms.apply(null, xyEl);
+        }
+
+        document.onmousemove = function(e) {
+            let xy = [e.clientX, e.clientY];
+            let position = xy.concat([ex1Layer]);
+
+            let box = ex2Layer.getBoundingClientRect();
+            let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
+
+            ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+            transformElement(ex1Layer, position);
+        };
+    </script>
 </body>
-<script type="text/javascript">
-    let constrain = 500;
-    let ex1Layer = document.getElementsByClassName("rotator")[0];
-    let ex2Layer = document.getElementsByClassName("parallax")[0];
 
-    function transforms(x, y, el) {
-        let box = el.getBoundingClientRect();
-        let calcX = -(y - box.y - (box.height / 2)) / constrain;
-        let calcY = (x - box.x - (box.width / 2)) / constrain;
-
-        return "perspective(calc(400px - 2vw)) "
-            + "   rotateX("+ calcX*3 +"deg) "
-            + "   rotateY("+ calcY +"deg) ";
-    };
-
-    function transformElement(el, xyEl) {
-        el.style.transform  = transforms.apply(null, xyEl);
-    }
-
-    document.onmousemove = function(e) {
-        let xy = [e.clientX, e.clientY];
-        let position = xy.concat([ex1Layer]);
-
-        let box = ex2Layer.getBoundingClientRect();
-        let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
-
-        ex2Layer.style = "background-position: " + (calcY+50) + "% center";
-        transformElement(ex1Layer, position);
-    };
-</script>
 </html>
