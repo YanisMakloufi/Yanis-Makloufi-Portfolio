@@ -7,12 +7,11 @@ main{
 }
 
 article{
-    width:475px;
-    margin:60px 0;
+    width: clamp(475px,70vw,600px);
+    margin:60px 10px;
     background-color: #b3c6db;
     padding: 1%;
     border-radius: 80px;
-    max-width: 90%;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 
