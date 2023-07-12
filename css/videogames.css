@@ -13,6 +13,18 @@ article{
     padding: 1%;
     border-radius: 80px;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    padding: 5% 0 1% 0;
+    border-radius: 0 0 50px 50px;
+    opacity: 0;
+    background: linear-gradient(to bottom, transparent, #e7a102 80%);
 }
 
 main img{
@@ -31,11 +43,13 @@ article:hover{
     transform: scale(1.1);
     outline:5px solid #e7a102;
     border-collapse: collapse;
-    z-index: 1;
+}
+
+article:hover .more{
+    opacity: 1;
 }
 
 article:hover img{
     filter: drop-shadow(17px 33px 15px rgba(53, 28, 117, 0.3));
     transform: scale(1.1);
-    z-index: 1;
 }

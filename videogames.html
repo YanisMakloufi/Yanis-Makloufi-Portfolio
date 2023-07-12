@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/videogames.css">
+    <title>Title</title>
+</head>
+<body>
+    <header class="parallax">
+        <div class="rotator">
+            <h1>PORTFOLIO</h1>
+            <h3>YANIS MAKLOUFI</h3>
+        </div>
+        <nav>
+            <a href="index.html">Présentation</a>
+            <a href="projects.html">Projets</a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>PROJETS</h2>
+        <h3>Voici une liste non exaustive des projets que j'ai réalisé</h3>
+    </div>
+    <hr>
+    <main>
+        <article>
+            <a href="sonic_illusion.html" style="color: black;">
+            <section>
+                <div>
+                    <h4>Sonic Illusion</h4>
+                    <img src="images/games_logo/SonicIllusion_logo.png" alt="Logo de Sonic Illusion">
+                </div>
+                <hr>
+                <p>
+                    Jeu vidéo<br>
+                    Inspiré de la licence sonic, vous etes mystérieusement téléportés dans des environnements divers et variés retraçant
+                    les époques. Qui est a l'origine de cela ?
+                </p>
+            </section>
+            </a>
+        </article>
+
+        <article>
+            <a href="temporal_rift.html" style="color: black;">
+            <section>
+                <div>
+                    <h4>Temporal Rift</h4>
+                    <img src="images/games_logo/TemporalRift_logo.png" alt="Logo de Temporal Rift">
+                </div>
+                <hr>
+                <p>
+                    Jeu vidéo<br>
+                    Réalisé en 30h lors de le Code Game Jam 2023, un bullet hell ardu avec une spécificité, vous pouvez arrêter le temps !
+                </p>
+            </section>
+            </a>
+        </article>
+
+        <article>
+            <a href="sonic_unleashed_3ds.html" style="color: black;">
+            <section>
+                <div>
+                    <h4>Sonic Unleashed 3DS</h4>
+                    <img src="images/games_logo/SonicUnleashed3DS_logo.png" alt="Logo de Sonic Unleashed 3DS">
+                </div>
+                <hr>
+                <p>
+                    Jeu vidéo<br>
+                    Reprise du jeu vidéo Sonic Unleashed sur une Nintendo 3DS. Exploitation des différentes fonctionnalités lier à la console.
+                </p>
+            </section>
+            </a>
+            <div class="more">
+                <h2>EN DÉVELOPEMENT</h2>
+            </div>
+        </article>
+
+        <article>
+            <a href="snow_bold.html" style="color: black;">
+            <section>
+                <div>
+                    <h4>Snow Bold</h4>
+                    <img src="images/games_logo/SnowBold_logo.png" alt="Logo de Snow Bold">
+                </div>
+                <hr>
+                <p>
+                    Jeu vidéo<br>
+                    Réalisé en 48h lors d'une Game Jam en distanciel.
+                </p>
+            </section>
+                </a>
+        </article>
+
+        <article>
+            <a href="aventuriers_du_rail.html" style="color: black;">
+                <section>
+                    <div>
+                        <h4>Aventuriers du rails</h4>
+                        <img src="images/games_logo/AventuriersDuRail_logo.jpeg" alt="Logo des aventuriers du rail">
+                    </div>
+                    <hr>
+                    <p>
+                        Version numérique du jeu de société "les aventuriers du rail" en java, entièrement jouable
+                        À partir d'une interface graphique.
+                    </p>
+                </section>
+            </a>
+        </article>
+
+        <article>
+            <a href="bouncy_edge.html" style="color: black;">
+                <section>
+                    <div>
+                        <h4>Bouncy Edge</h4>
+                        <img src="images/games_logo/BouncyEdge_logo.png" alt="Logo de Bouncy Edge">
+                    </div>
+                    <hr>
+                    <p>
+                        Jeu vidéo<br>
+                        Vous avez le pouvoir d'attirer une boule vers votre doigt, celle-ci rebondit contre les bords
+                        de votre écran, le but est de récupérer les pièces tout en esquivant les différents obstacles
+                    </p>
+                </section>
+            </a>
+            <div class="more">
+                <h2>EN DÉVELOPEMENT</h2>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Ynox-YanisM" target="_blank"><img src="images/github_logo.png" alt="logo github"></a>
+        <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png" alt="logo linkedin"></a>
+        <p>Site réalisé par Yanis Makloufi | 2023</p>
+    </footer>
+
+    <script>
+        let constrain = 500;
+        let ex1Layer = document.getElementsByClassName("rotator")[0];
+        let ex2Layer = document.getElementsByClassName("parallax")[0];
+
+        function transforms(x, y, el) {
+            let box = el.getBoundingClientRect();
+            let calcX = -(y - box.y - (box.height / 2)) / constrain;
+            let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+            return "perspective(calc(400px - 2vw)) "
+                + "   rotateX("+ calcX*3 +"deg) "
+                + "   rotateY("+ calcY +"deg) ";
+        };
+
+        function transformElement(el, xyEl) {
+            el.style.transform  = transforms.apply(null, xyEl);
+        }
+
+        document.onmousemove = function(e) {
+            let xy = [e.clientX, e.clientY];
+            let position = xy.concat([ex1Layer]);
+
+            let box = ex2Layer.getBoundingClientRect();
+            let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
+
+            ex2Layer.style = "background-position: " + (calcY+50) + "% center";
+            transformElement(ex1Layer, position);
+        };
+    </script>
+</body>
+
+</html>
