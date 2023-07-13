@@ -125,7 +125,6 @@ p.more{
 }
 
 article#formation{
-    /*border-radius: 250px;*/
     width: 90%;
     background-color: unset;
     height: 60vh;
@@ -161,8 +160,10 @@ li .diplome {
 }
 li .point {
     display: block;
-    width: 5vw;
-    height: 5vw;
+    width: 8vw;
+    height: 8vw;
+    max-width: 400px;
+    max-height: 400px;
     margin:auto;
     border: 1vw solid #2D5E9B;
     border-radius: 1000px;
@@ -183,14 +184,50 @@ li .description {
     opacity: 0;
 }
 
+@media screen and (max-width: 1000px) {
+    ol {
+        flex-direction: column;
+        height: 100%;
+        width: 8px;
+    }
+
+    li {
+        width: 500px;
+        height: fit-content;
+        top: 0;
+        transform: translateY(0) translateX(-50%);
+        left: 50%;
+    }
+
+    li .diplome {
+        margin: 0;
+        position: absolute;
+        left: 0;
+    }
+
+    article#formation{
+        flex-direction: column;
+    }
+
+    li .description {
+        border-width: 6px 6px 6px 0;
+        right: 0;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+        border-radius: 6px 2vw 2vw 6px;
+        opacity: 0;
+    }
+}
+
 /* ---- Hover effects ---- */
 li:hover {
     cursor: pointer;
     margin-top: 4vw;
 }
 li:hover .point{
-    height: 7vw;
-    width: 7vw;
+    height: 10vw;
+    width: 10vw;
     border-width: 0.5vw;
 }
 li:hover .description {
