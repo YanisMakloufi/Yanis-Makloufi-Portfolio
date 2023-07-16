@@ -127,14 +127,13 @@ p.more{
 article#formation{
     width: 90%;
     background-color: unset;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     box-shadow: unset;
 }
 
 ol {
-    margin: 100px;
     height: 8px;
     background: #2D5E9B;
     width: 100%;
@@ -149,7 +148,6 @@ li {
     display: inline-block;
     height: fit-content;
     position: relative;
-    top: 50%;
     transform: translateY(-50%);
     width: inherit;
     text-align: center;
@@ -158,16 +156,13 @@ li .diplome {
     color: black;
     position: absolute;
     top: -50%;
-    margin: 0;
     width: 100%;
     text-align: center;
 }
 li .point {
     display: block;
-    width: 8vw;
-    height: 8vw;
-    max-width: 150px;
-    max-height: 150px;
+    width: min(8vw,150px);
+    height: min(8vw,150px);
     margin:auto;
     border: 1vw solid #2D5E9B;
     border-radius: 1000px;
@@ -176,12 +171,9 @@ li .point {
 li .description {
     border: 6px solid #FFBD59;
     border-width: 0 6px 6px 6px;
-    padding: 1vw;
-    margin-top: 20px;
+    padding: 1%;
     position: absolute;
-    font-weight: normal;
-    z-index: 1;
-    width: 20vw;
+    width: auto;
     right: 50%;
     transform: translateX(50%);
     border-radius: 6px 6px 2vw 2vw;
@@ -213,11 +205,13 @@ li .description {
 
     li .description {
         border-width: 6px 6px 6px 0;
-        right: 0;
-        top: 0;
-        transform: translateY(-50%);
         border-radius: 6px 2vw 2vw 6px;
+        width: 50%;
         opacity: 0;
+        right: -20%;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -226,16 +220,10 @@ li:hover {
     cursor: pointer;
 }
 li:hover .point{
-    height: 10vw;
-    width: 10vw;
-    max-width: 187px;
-    max-height: 187px;
+    width: min(10vw,187px);
+    height: min(10vw,187px);
     border-width: 0.5vw;
 }
 li:hover .description {
     opacity: 1;
-}
-
-main{
-    margin:auto;
 }
