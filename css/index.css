@@ -140,7 +140,7 @@ ol {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-radius: 100px;
+    border-radius: 50px;
     padding: 0;
 }
 
@@ -150,20 +150,24 @@ li {
     height: fit-content;
     position: relative;
     top: 50%;
-    transform: translateY(-100%);
-    margin-top: 3.5vw;
-    width: 20%;
+    transform: translateY(-50%);
+    width: inherit;
     text-align: center;
 }
 li .diplome {
-    color: #000000;
+    color: black;
+    position: absolute;
+    top: -50%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 li .point {
     display: block;
     width: 8vw;
     height: 8vw;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 150px;
+    max-height: 150px;
     margin:auto;
     border: 1vw solid #2D5E9B;
     border-radius: 1000px;
@@ -200,9 +204,7 @@ li .description {
     }
 
     li .diplome {
-        margin: 0;
-        position: absolute;
-        left: 0;
+        text-align: left;
     }
 
     article#formation{
@@ -213,7 +215,6 @@ li .description {
         border-width: 6px 6px 6px 0;
         right: 0;
         top: 0;
-        right: 0;
         transform: translateY(-50%);
         border-radius: 6px 2vw 2vw 6px;
         opacity: 0;
@@ -223,11 +224,12 @@ li .description {
 /* ---- Hover effects ---- */
 li:hover {
     cursor: pointer;
-    margin-top: 4vw;
 }
 li:hover .point{
     height: 10vw;
     width: 10vw;
+    max-width: 187px;
+    max-height: 187px;
     border-width: 0.5vw;
 }
 li:hover .description {
