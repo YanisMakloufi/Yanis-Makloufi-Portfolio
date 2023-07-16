@@ -131,8 +131,9 @@ body > header a{
 
 a{
     text-decoration: none;
+    filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
 }
-a:hover, a > img:hover{
+a > img:hover{
     transform: scale(1.1);
 }
 
@@ -147,7 +148,6 @@ footer {
 footer a > img{
     width: 4vw;
     margin: 0 3%;
-    filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
 }
 
 footer svg{
