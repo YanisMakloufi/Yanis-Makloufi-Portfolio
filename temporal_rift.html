@@ -29,29 +29,35 @@
             <aside>
                 <div>
                     <h2>Résumé</h2>
-                    Le projet est né lors de le Code Game Jam 2023 organisé par l'IUT de Montpellier-Sète, un concours de réalisation de jeux vidéo en 30h
-                    Non stop. Il s'agit d'un "Bullet Hell", une pluie de balles apparaît sur l'écran, votre but est de les esquiver le plus longtemps possible.<br>
-                    Mais la particularité de ce jeu, c'est que vous avez le pouvoir d'arrêter le temps pendant un court instant. Certaines balles ne réagissent
-                    pas de la même manière selon leurs couleurs, certaines se figent, d'autres ralentissent juste ou même accélèrent ! Il faudra donc anticiper et utiliser
-                    votre pouvoir avec parcimonie.
+                    <p>
+                        Le projet est né lors de le Code Game Jam 2023 organisé par l'IUT de Montpellier-Sète, un concours de réalisation de jeux vidéo en 30h
+                        Non stop. Il s'agit d'un "Bullet Hell", une pluie de balles apparaît sur l'écran, votre but est de les esquiver le plus longtemps possible.<br>
+                        Mais la particularité de ce jeu, c'est que vous avez le pouvoir d'arrêter le temps pendant un court instant. Certaines balles ne réagissent
+                        pas de la même manière selon leurs couleurs, certaines se figent, d'autres ralentissent juste ou même accélèrent ! Il faudra donc anticiper et utiliser
+                        votre pouvoir avec parcimonie.
+                    </p>
                     <!--Contexte du projet (commande académique, contraintes dans la réalisation, durée, en équipe ou seul…)-->
                     <!--<br>-->
                     <!--Méthodes de travail et résultats obtenus avec des preuves (gif, copie d’écran, la vidéo de projet…)-->
                 </div>
 
                 <div>
-                    Equipe Margoulinaise Amora : <br>
-                    - Amine Belhamdi <br>
-                    - Antoine Argaillot <br>
-                    - Joan Clavel <br>
-                    - Mika Chue Waye <br>
-                    - Jocelin Sanchez <br>
-                    et moi même.
+                    <p>
+                        Equipe Margoulinaise Amora : <br>
+                        - Amine Belhamdi <br>
+                        - Antoine Argaillot <br>
+                        - Joan Clavel <br>
+                        - Mika Chue Waye <br>
+                        - Jocelin Sanchez <br>
+                        et moi même.
+                    <p>
                 </div>
             </aside>
             <div>
-                Ce projet m'a permis de grandement améliorer ma connaissance en algorithmie ainsi que la gestion de projet,
-                dû a l'angouement qu'a suscité le jeu j'ai du organisé de manière efficace l'ajout de nouvelle fonctionnalité pour les faire correspondre aux deadline
+                <p>
+                    Ce projet nous a permis de s'organiser et travailler en équipe plus efficacement dans un temps réduis,
+                    mais aussi à apprendre des aspects techniques rapidement.
+                <p>
             </div>
             <img class="wide" src="images/temporal_rift/screen01.png" alt="Capture de d'une partie de Temporal Rift">
             <div class="more">
@@ -69,35 +75,7 @@
             <a href="https://www.linkedin.com/in/yanis-makloufi-6992a522b" target="_blank"><img src="images/linkedin_logo.png" alt="logo linkedin"></a>
             <p>Site réalisé par Yanis Makloufi | 2023</p>
         </footer>
-        <script>
-            let constrain = 500;
-            let ex1Layer = document.getElementsByClassName("rotator")[0];
-            let ex2Layer = document.getElementsByClassName("parallax")[0];
 
-            function transforms(x, y, el) {
-                let box = el.getBoundingClientRect();
-                let calcX = -(y - box.y - (box.height / 2)) / constrain;
-                let calcY = (x - box.x - (box.width / 2)) / constrain;
-
-                return "perspective(calc(400px - 2vw)) "
-                    + "   rotateX("+ calcX*3 +"deg) "
-                    + "   rotateY("+ calcY +"deg) ";
-            };
-
-            function transformElement(el, xyEl) {
-                el.style.transform  = transforms.apply(null, xyEl);
-            }
-
-            document.onmousemove = function(e) {
-                let xy = [e.clientX, e.clientY];
-                let position = xy.concat([ex1Layer]);
-
-                let box = ex2Layer.getBoundingClientRect();
-                let calcY = -(xy[0] - box.x - (box.width / 2)) / constrain*0.4;
-
-                ex2Layer.style = "background-position: " + (calcY+50) + "% center";
-                transformElement(ex1Layer, position);
-            };
-        </script>
+        <script src="js/headerParalax.js"></script>
     </body>
 </html>
