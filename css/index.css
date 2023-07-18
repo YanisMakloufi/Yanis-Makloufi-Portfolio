@@ -161,8 +161,8 @@ li .diplome {
 }
 li .point {
     display: block;
-    width: min(8vw,150px);
-    height: min(8vw,150px);
+    width: min(6vw,150px);
+    height: min(6vw,150px);
     margin:auto;
     border: 1vw solid #2D5E9B;
     border-radius: 1000px;
@@ -220,8 +220,8 @@ li:hover {
     cursor: pointer;
 }
 li:hover .point{
-    width: min(10vw,187px);
-    height: min(10vw,187px);
+    width: min(7vw,187px);
+    height: min(7vw,187px);
     border-width: 0.5vw;
 }
 li:hover .description {
