@@ -32,10 +32,16 @@
 
 body {
     margin: 0;
-    background: linear-gradient(160deg, rgba(156,208,255,1) 20%, rgba(221,229,238,1) 100%);
+    background: linear-gradient(rgb(58 148 207) 25%, rgb(24 44 83) 95%), url(../images/backgrounds/motif.png);
+    background-size: auto, 100% 1200px;
+    background-blend-mode: multiply;
+    background-attachment: local, fixed;
     font-size: 22px;
     font-family: "Nunito-Regular", serif;
     color: #373230;
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0s;
 }
 
 h1{
@@ -75,14 +81,9 @@ h4{
 }
 
 body > div{
-    background-color: #3465A4;
+    background-color: #1e4b85;
     padding: 10px;
     color: #FFE8DB;
-}
-
-body{
-    text-align: center;
-    overflow-x: hidden;
 }
 
 body > header{
@@ -93,7 +94,7 @@ body > header{
     height: 850px;
     min-height: 85vh;
     margin-bottom:3%;
-    background: center linear-gradient(transparent 90%, #a4d3fd), url('../images/backgrounds/6066657_blur1.png');
+    background: center linear-gradient(transparent 90%, rgb(58 148 207)), url('../images/backgrounds/6066657_blur1.png');
     background-size: cover;
     color: #FFE8DB;
     transition: 0s;
@@ -118,7 +119,7 @@ header nav {
 hr{
     height:7px;
     width: 70%;
-    background-color: #2d5e9b;
+    background-color: #1e4b85;
     border-radius:100px;
     margin:15px auto;
     border: none;
@@ -139,10 +140,10 @@ a > img:hover{
 }
 
 footer {
-    background-color: #355269;
+    background: linear-gradient(transparent 0%, #030a25 50%);
     min-height:100px;
     margin-top:5%;
-    padding: 2%;
+    padding: 3% 0 1% 0;
     color: #FFE8DB;
 }
 

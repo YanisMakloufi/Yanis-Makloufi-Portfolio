@@ -14,7 +14,7 @@ article{
     border-radius: 50px;
     height: 75vh;
     width:50%;
-    background-color: #729ece;
+    background-color: #4ba6c7;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 
@@ -23,7 +23,7 @@ article#biography{
     text-align: left;
     padding:2%;
     height: auto;
-    background-color: #729ece;
+    background-color: #4ba6c7;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
 }
 
@@ -69,11 +69,11 @@ article#competences section {
     margin:50px 0;
     height:550px;
     padding: 1%;
-    filter: drop-shadow(0px 0px 20px #efc825);
+    filter: drop-shadow(0px 0px 20px #ffce00);
 }
 
 main > div{
-    background-color: #3465A4;
+    background-color: #1e4b85;
     padding: 10px;
     color: #FFE8DB;
 }
@@ -128,6 +128,7 @@ p.more{
 article#formation{
     width: 90%;
     background-color: unset;
+    border-radius: 0;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -136,7 +137,7 @@ article#formation{
 
 ol {
     height: 8px;
-    background: #2D5E9B;
+    background: #1e4b85;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -165,7 +166,7 @@ li .point {
     width: min(6vw,150px);
     height: min(6vw,150px);
     margin:auto;
-    border: 1vw solid #2D5E9B;
+    border: 1vw solid #1e4b85;
     border-radius: 1000px;
     background: #FFE8DB;
 }
