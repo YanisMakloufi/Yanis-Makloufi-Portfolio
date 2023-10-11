@@ -27,11 +27,11 @@ document.onmousemove = function(e) {
     transformElement(ex1Layer, position);
 };
 
-var $slider = document.getElementById("parallaxY");
+/*var $slider = document.getElementById("parallaxY");
 
 function parallax() {
     $slider.style.backgroundPosition = '0%, 0% ' + -window.pageYOffset/5 + 'px';
 }
 window.addEventListener("scroll", function(){
     parallax();
-});
+});*/
