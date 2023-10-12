@@ -1,28 +1,55 @@
-div.more{
-    padding: 2% 0 2% 5%;
+main{
+    margin: auto;
+}
+
+section:first-child{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+section.more{
+    padding: 2% 5%;
     font-size: 26px;
-    border: solid #FFBD59 6px;
     border-radius: 50px;
     max-height: 90%;
     overflow-y: auto;
-    width:80%;
+    width:60%;
     margin: auto;
     text-align: left;
+    background-color: #FFBD59;
 }
 
-div.more nav{
+section.more nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 40%;
     margin: auto;
 }
 
-div.more img{
-    width:6vw;
+section#historique{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    padding: 2%;
+    margin: 5% 0;
+    width: 90%;
+    border-radius: 0 250px 250px 0;
+    background-color: #4ba6c7;
+    box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
+}
+
+section#historique p{
+    width: 50%;
+}
+
+section.more img{
+    width:3vw;
 }
 
 aside{
-    width: 40%;
-    display: inline-block;
+    width: 45%;
     margin:2%;
 }
 
@@ -45,6 +72,10 @@ main p{
     margin:1%;
 }
 
+img.icon{
+    width: 15%;
+}
+
 figure{
     margin: 5% auto;
     font-style: italic;
@@ -52,22 +83,27 @@ figure{
 
 iframe{
     border-radius: 30px;
-    border-style: none;
+    border: solid #FFBD59 8px;
 }
 
-main img{
+.light{
+    color: #FFE8DB;
+}
+
+#stat{
+    display: flex;
+    align-items: center;
+}
+
+main img.illustration{
     max-width:50%;
-    float: left;
     margin: auto;
+    border-radius: 30px;
+    border: solid #FFE8DB 5px;
 }
 
 img.wide{
     max-width:70%;
-    float: none;
     margin: 5% auto;
 }
 
-main{
-    width: 90%;
-    margin: auto;
-}

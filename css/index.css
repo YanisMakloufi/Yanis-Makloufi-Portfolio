@@ -25,6 +25,9 @@ article#biography{
     height: auto;
     background-color: #4ba6c7;
     box-shadow: 15px 30px 30px rgba(53, 28, 117, 0.3);
+    margin: 5% 0;
+    width: 85%;
+    align-items: center;
 }
 
 article#biography img {
@@ -70,12 +73,6 @@ article#competences section {
     height:550px;
     padding: 1%;
     filter: drop-shadow(0px 0px 20px #ffce00);
-}
-
-main > div{
-    background-color: #1e4b85;
-    padding: 10px;
-    color: #FFE8DB;
 }
 
 article#competences section * {
