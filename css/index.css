@@ -101,7 +101,6 @@ article > header {
 
 article > p{
     padding: 1%;
-    font-size: 24px;
     border: solid #FFE8DB;
     border-width: 0 0 5px 5px;
     border-radius: 5px 5px 5px 45px;
@@ -112,7 +111,6 @@ article > p{
 
 p.more{
     padding: 2% 0 2% 5%;
-    font-size: 26px;
     border: solid #FFBD59 6px;
     border-radius: 50px;
     max-height: 90%;

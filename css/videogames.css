@@ -21,10 +21,11 @@ article{
     text-align: center;
     right: 0;
     left: 0;
+    top:90%;
     padding: 5% 0 1% 0;
     border-radius: 0 0 50px 50px;
     opacity: 0;
-    background: linear-gradient(to bottom, transparent, #e7a102 80%);
+    background: linear-gradient(to bottom, transparent, #e7a102 70%);
 }
 
 main img{

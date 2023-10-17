@@ -6,11 +6,11 @@ section:first-child{
     display: flex;
     width: 90%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 section.more{
     padding: 2% 5%;
-    font-size: 26px;
     border-radius: 50px;
     max-height: 90%;
     overflow-y: auto;
@@ -50,14 +50,14 @@ section.more img{
 
 aside{
     width: 45%;
-    margin:2%;
+    margin:auto;
+    min-width: 500px;
 }
 
 main div{
     margin:2% 0;
     text-align: left;
     padding: 1%;
-    font-size: 24px;
     border: solid #FFE8DB;
     border-width: 0 0 5px 5px;
     border-radius: 5px 5px 5px 45px;
@@ -96,7 +96,8 @@ iframe{
 }
 
 main img.illustration{
-    max-width:50%;
+    width:50%;
+    min-width: 500px;
     margin: auto;
     border-radius: 30px;
     border: solid #FFE8DB 5px;

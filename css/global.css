@@ -36,7 +36,7 @@ body {
     background-size: auto, 100% 80%;
     background-blend-mode: multiply;
     background-attachment: local, fixed;
-    font-size: 22px;
+    font-size: 24px;
     font-family: "Nunito-Regular", serif;
     color: #373230;
     text-align: center;
@@ -155,9 +155,9 @@ body > header a{
 }
 
 a{
+    display: contents;
     text-decoration: none;
     filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
-    height: fit-content;
 }
 a > img:hover{
     transform: scale(1.1);
@@ -172,8 +172,9 @@ footer {
 }
 
 footer a > img{
-    width: 4vw;
+    width: 4%;
     margin: 0 3%;
+    min-width: 50px;
 }
 
 /*----- V ANIMATIONS V -----*/
