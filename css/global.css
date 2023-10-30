@@ -32,13 +32,13 @@
 
 body {
     margin: 0;
-    background: linear-gradient(rgb(60, 154, 217) 25%, rgb(24 44 83) 95%), url(../images/backgrounds/motif.png);
-    background-size: auto, 100% 80%;
-    background-blend-mode: multiply;
+    background: linear-gradient(#40a4f3 25%, #43579a 95%), url(../images/backgrounds/background_nocolor.png);
+    background-size: auto, cover;
+    background-blend-mode: difference;
     background-attachment: local, fixed;
     font-size: 24px;
     font-family: "Nunito-Regular", serif;
-    color: #373230;
+    color: #321200;
     text-align: center;
     overflow-x: hidden;
     transition: 0s;
@@ -101,7 +101,7 @@ h4{
 }
 
 .bandeau{
-    background-color: #1e4b85;
+    background-color: #2E4CB4;
     color: #FFE8DB;
     padding: 1px;
     z-index: 2;
@@ -140,7 +140,7 @@ header nav {
 hr{
     height:7px;
     width: 70%;
-    background-color: #1e4b85;
+    background-color: #2E4CB4;
     border-radius:100px;
     margin:15px auto;
     border: none;
