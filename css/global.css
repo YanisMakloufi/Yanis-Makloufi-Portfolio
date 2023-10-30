@@ -103,8 +103,6 @@ h4{
 .bandeau{
     background-color: #1e4b85;
     color: #FFE8DB;
-    position: sticky;
-    top:0;
     padding: 1px;
     z-index: 2;
 }
@@ -155,7 +153,6 @@ body > header a{
 }
 
 a{
-    display: contents;
     text-decoration: none;
     filter: drop-shadow(8px 8px 10px rgba(53, 28, 117, 0.3));
 }
@@ -172,7 +169,7 @@ footer {
 }
 
 footer a > img{
-    width: 4%;
+    width: 5%;
     margin: 0 3%;
     min-width: 50px;
 }
