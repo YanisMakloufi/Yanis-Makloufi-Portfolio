@@ -163,6 +163,7 @@ li .point {
     border: 1vw solid #2E4CB4;
     border-radius: 1000px;
     background: #FFE8DB;
+    box-shadow: inset 15px 15px 2px rgba(255, 255, 255, 0.5);
 }
 li .description {
     border: 6px solid #FFBD59;
