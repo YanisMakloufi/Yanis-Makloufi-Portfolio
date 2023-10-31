@@ -18,7 +18,7 @@ article{
     box-shadow: 15px 30px 30px rgba(0, 15, 154, 0.3);
 }
 
-article#biography{
+article.biography{
     display: block;
     text-align: left;
     padding:2%;
@@ -26,11 +26,11 @@ article#biography{
     background-color: #A8C5E4;
     box-shadow: 15px 30px 30px rgba(0, 15, 154, 0.3);
     margin: 5% 0;
-    width: 85%;
+    width: 65%;
     align-items: center;
 }
 
-article#biography img {
+article.biography img {
     box-shadow: 5px 5px 10px 5px rgba(0, 15, 154, 0.5);
     display: block;
     float: right;
@@ -39,12 +39,17 @@ article#biography img {
     border-radius: 1000px;
 }
 
-article#biography h4 {
+article.side:nth-of-type(even) img{
+    float: left;
+    margin-right: 10%;
+}
+
+article.biography h4 {
     width:20%;
     margin-left: 10%;
 }
 
-article#biography p {
+article.biography p {
     width:60%;
     margin-left: 10%;
 }
@@ -85,7 +90,7 @@ article.side:nth-of-type(odd) {
 
 article.side:nth-of-type(even) {
     border-radius: 150px 0 0 150px;
-    margin-left: 15%;
+    margin-left: auto;
 }
 
 article > header {
