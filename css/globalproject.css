@@ -81,6 +81,10 @@ figure{
     font-style: italic;
 }
 
+iframe, img.illustration{
+    box-shadow:15px 30px 30px #000f9a4d
+}
+
 iframe{
     border-radius: 30px;
     border: solid #FFBD59 8px;
@@ -107,4 +111,3 @@ img.wide{
     max-width:70%;
     margin: 5% auto;
 }
-

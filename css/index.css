@@ -1,253 +1,256 @@
-article.side{
+article.side {
     margin:5% 0;
     width:85%;
     padding:0;
-    align-items: center;
-    height: 400px;
+    align-items:center;
+    height:400px
 }
 
-article{
-    text-align: left;
-    margin: auto;
+article {
+    text-align:left;
+    margin:auto;
     padding:2%;
-    display: flex;
-    border-radius: 50px;
-    height: 75vh;
+    display:flex;
+    border-radius:50px;
+    height:75vh;
     width:50%;
-    background-color: #A8C5E4;
-    box-shadow: 15px 30px 30px rgba(0, 15, 154, 0.3);
+    background-color:#A8C5E4;
+    box-shadow:15px 30px 30px #000f9a4d
 }
 
-article.biography{
-    display: block;
-    text-align: left;
+article.biography {
+    display:block;
+    text-align:left;
     padding:2%;
-    height: auto;
-    background-color: #A8C5E4;
-    box-shadow: 15px 30px 30px rgba(0, 15, 154, 0.3);
-    margin: 5% 0;
-    width: 65%;
-    align-items: center;
+    height:auto;
+    background-color:#A8C5E4;
+    box-shadow:15px 30px 30px #000f9a4d;
+    margin:5% 0;
+    width:65%;
+    align-items:center
 }
 
 article.biography img {
-    box-shadow: 5px 5px 10px 5px rgba(0, 15, 154, 0.5);
-    display: block;
-    float: right;
+    box-shadow:5px 5px 10px 5px #000f9a80;
+    display:block;
+    float:right;
     width:20%;
-    margin: auto;
-    border-radius: 1000px;
+    margin:auto;
+    border-radius:1000px
 }
 
-article.side:nth-of-type(even) img{
-    float: left;
-    margin-right: 10%;
+article.side:nth-of-type(even) img {
+    float:left;
+    margin-right:10%
 }
 
 article.biography h4 {
     width:20%;
-    margin-left: 10%;
+    margin-left:10%
 }
 
 article.biography p {
     width:60%;
-    margin-left: 10%;
+    margin-left:10%
 }
 
 article#competences {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-    height: auto;
-    background: unset;
-    box-shadow: unset;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    width:90%;
+    margin:auto;
+    height:auto;
+    background:unset;
+    box-shadow:unset
 }
 
 article#competences section {
-    background-size: contain;
-    background-image: url('../images/star.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    text-align: center;
+    background-size:contain;
+    background-image:url(../images/star.png);
+    background-repeat:no-repeat;
+    background-position:top;
+    text-align:center;
     width:90%;
-    max-width: 550px;
+    max-width:550px;
     margin:50px 0;
     height:550px;
-    padding: 1%;
-    filter: drop-shadow(0px 0px 20px #FFBD59);
+    padding:1%;
+    filter:drop-shadow(0px 0px 20px #FFBD59)
 }
 
 article#interest {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    height: auto;
-    border-radius: 80px;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    height:auto;
+    border-radius:80px;
+    background:#0003;
+    box-shadow:inset 0 0 15px #0009
 }
 
 article#competences section * {
-    position: relative;
-    top:25%;
+    position:relative;
+    top:25%
 }
 
 article.side:nth-of-type(odd) {
-    border-radius: 0 150px 150px 0;
+    border-radius:0 150px 150px 0
 }
 
 article.side:nth-of-type(even) {
-    border-radius: 150px 0 0 150px;
-    margin-left: auto;
+    border-radius:150px 0 0 150px;
+    margin-left:auto
 }
 
 article > header {
     width:30%;
     min-width:250px;
-    border-radius: 65px;
-    text-align: center;
+    border-radius:65px;
+    text-align:center;
     margin:0 5%;
-    background-color: #b3c6db;
-    height: inherit;
+    background-color:#b3c6db;
+    height:inherit
 }
 
-article > p{
-    padding: 1%;
-    border: solid #FFE8DB;
-    border-width: 0 0 5px 5px;
-    border-radius: 5px 5px 5px 45px;
-    max-height: 90%;
-    overflow-y: auto;
-    width:50%;
+article > p {
+    padding:1%;
+    border:solid #FFE8DB;
+    border-width:0 0 5px 5px;
+    border-radius:5px 5px 5px 45px;
+    max-height:90%;
+    overflow-y:auto;
+    width:50%
 }
 
-p.more{
-    padding: 2% 0 2% 5%;
-    border: solid #FFBD59 6px;
-    border-radius: 50px;
-    max-height: 90%;
-    overflow-y: auto;
+p.more {
+    padding:2% 0 2% 5%;
+    border:solid #FFBD59 6px;
+    border-radius:50px;
+    max-height:90%;
+    overflow-y:auto;
     width:80%;
-    margin: 5% auto;
-    text-align: left;
+    margin:5% auto;
+    text-align:left
 }
 
-article#formation{
-    width: 90%;
-    background-color: unset;
-    border-radius: 0;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    box-shadow: unset;
+article#formation {
+    width:90%;
+    background-color:unset;
+    border-radius:0;
+    height:50vh;
+    display:flex;
+    align-items:center;
+    box-shadow:unset
 }
 
 ol {
-    height: 8px;
-    background: #2E4CB4;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-    padding: 0;
+    height:8px;
+    background:#2E4CB4;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    border-radius:50px;
+    padding:0
 }
 
-/* ---- Timeline elements ---- */
 li {
-    display: inline-block;
-    height: fit-content;
-    position: relative;
-    transform: translateY(-50%);
-    width: inherit;
-    text-align: center;
+    display:inline-block;
+    height:fit-content;
+    position:relative;
+    transform:translateY(-50%);
+    width:inherit;
+    text-align:center
 }
+
 li .diplome {
-    color: black;
-    position: absolute;
-    top: -50%;
-    width: 100%;
-    text-align: center;
+    color:#000;
+    position:absolute;
+    top:-50%;
+    width:100%;
+    text-align:center
 }
+
 li .point {
-    display: block;
-    width: min(6vw,150px);
-    height: min(6vw,150px);
+    display:block;
+    width:min(6vw,150px);
+    height:min(6vw,150px);
     margin:auto;
-    border: 1vw solid #2E4CB4;
-    border-radius: 1000px;
-    background: #FFE8DB;
-    box-shadow: inset 15px 15px 2px rgba(255, 255, 255, 0.5);
+    border:1vw solid #2E4CB4;
+    border-radius:1000px;
+    background:#FFE8DB;
+    box-shadow:inset 15px 15px 2px #ffffff80
 }
+
 li .description {
-    border: 6px solid #FFBD59;
-    border-width: 0 6px 6px 6px;
-    padding: 1%;
-    position: absolute;
-    width: auto;
-    left: -30%;
-    right: 50%;
-    transform: translateX(50%);
-    border-radius: 6px 6px 2vw 2vw;
-    opacity: 0;
+    border:6px solid #FFBD59;
+    border-width:0 6px 6px;
+    padding:1%;
+    position:absolute;
+    width:auto;
+    left:-30%;
+    right:50%;
+    transform:translateX(50%);
+    border-radius:6px 6px 2vw 2vw;
+    opacity:0
 }
 
 @media screen and (max-width: 1000px) {
     ol {
-        flex-direction: column;
-        height: 100%;
-        width: 8px;
+        flex-direction:column;
+        height:100%;
+        width:8px
     }
 
     li {
-        width: 500px;
-        height: fit-content;
-        top: 0;
-        transform: translateY(0) translateX(-50%);
-        left: 50%;
+        width:500px;
+        height:fit-content;
+        top:0;
+        transform:translateY(0) translateX(-50%);
+        left:50%
     }
 
     li .diplome {
-        text-align: left;
+        text-align:left
     }
 
-    article#formation{
-        flex-direction: column;
+    article#formation {
+        flex-direction:column
     }
 
     li .description {
-        border-width: 6px 6px 6px 0;
-        border-radius: 6px 2vw 2vw 6px;
-        width: 50%;
-        opacity: 0;
-        right: -20%;
-        margin: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        border-width:6px 6px 6px 0;
+        border-radius:6px 2vw 2vw 6px;
+        width:50%;
+        opacity:0;
+        right:-20%;
+        margin:0;
+        top:50%;
+        transform:translateY(-50%)
     }
 }
 
 .warning {
-    text-align: center;
-    padding: 2% 0;
-    border-radius: 0 0 50px 50px;
-    background: linear-gradient(to bottom, transparent, #e7a102 80%);
-    margin-bottom:2%;
+    text-align:center;
+    padding:2% 0;
+    border-radius:0 0 50px 50px;
+    background:linear-gradient(to bottom,transparent,#e7a102 80%);
+    margin-bottom:2%
 }
 
-/* ---- Hover effects ---- */
 li:hover {
-    cursor: pointer;
+    cursor:pointer
 }
-li:hover .point{
-    width: min(7vw,187px);
-    height: min(7vw,187px);
-    border-width: 0.5vw;
+
+li:hover .point {
+    width:min(7vw,187px);
+    height:min(7vw,187px);
+    border-width:.5vw
 }
+
 li:hover .description {
-    opacity: 1;
+    opacity:1
 }
