@@ -46,6 +46,8 @@ section#historique p{
 
 section.more img{
     width:3vw;
+    display: block;
+    margin: auto;
 }
 
 aside{
@@ -109,5 +111,6 @@ main img.illustration{
 
 img.wide{
     max-width:70%;
-    margin: 5% auto;
+    border-radius: 30px;
+    margin: auto;
 }
