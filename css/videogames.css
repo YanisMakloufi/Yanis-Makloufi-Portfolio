@@ -47,14 +47,6 @@ article:hover{
     border-collapse: collapse;
 }
 
-span.category {
-    border-radius: 200px;
-    background: #acda5e;
-    padding: 1% 2%;
-    margin: 1% 3%;
-    display: inline-block;
-}
-
 article:hover .more{
     opacity: 1;
 }
